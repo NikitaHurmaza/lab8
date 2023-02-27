@@ -29,7 +29,7 @@ public class Logic {
         return books.stream()
                 .filter(x-> x.getAuthor().equals(author))
                 .sorted(Comparator.comparing(Book::getYearOfPublishing))
-                .collect(Collectors.toList());m
+                .collect(Collectors.toList());
 
     }
 
