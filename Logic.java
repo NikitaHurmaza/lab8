@@ -64,6 +64,6 @@ return books.stream()
     //для кожного видавництва визначити список книг, виданих ним
     public Map<String, List<Book>> getBooksByPublisherMap(List<Book>books) {
        return books.stream()
-               .collect(Collectors.groupingBy(Book::getPublisher)); // группирует спиcок обьектов
+               .collect(Collectors.groupingBy(Book::getPublisher)); 
     }
 }
